@@ -1,6 +1,6 @@
 from flask import Flask
 import asyncio
-from pyrogram.idle import idle
+from pyrogram import idle
 from bot import bot
 
 app = Flask(__name__)
@@ -13,6 +13,7 @@ async def start_bot():
     await bot.start()
     print("✅ Bot started.")
     await idle()
+    await bot.stop()
 
 def run_all():
     loop = asyncio.new_event_loop()
