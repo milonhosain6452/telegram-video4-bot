@@ -1,6 +1,6 @@
 from flask import Flask
 import asyncio
-from pyrogram import idle
+from pyrogram.idle import idle
 from bot import bot
 
 app = Flask(__name__)
