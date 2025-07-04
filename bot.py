@@ -82,4 +82,3 @@ async def genlink(client, message: Message):
         await message.reply(f"✅ ভিডিও লিংক তৈরি হয়েছে:\n🔗 {deep_link}")
     except Exception as e:
         await message.reply(f"❌ Error:\n`{e}`")
-        
